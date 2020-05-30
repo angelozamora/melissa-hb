@@ -24,15 +24,15 @@ function sorteoRegalos(){
     regalo1=Math.round(regalo1); 
     regalo2=Math.round(regalo2);
 
-    console.log(regalo1);
-    console.log(regalo2);
+    console.log("regalo1 :"+regalo1);
+    console.log("regalo2 :"+regalo2);
 
     if(regalo1===regalo2){
         regalo2=numeroRandom();
         regalo2=Math.round(regalo2);
         
-        console.log(regalo1);
-        console.log(regalo2);
+        console.log("regalo1 :"+regalo1);
+        console.log("regalo2 :"+regalo2);
     }
 
 
