@@ -50,4 +50,22 @@
 
 }
 
+.ver-url{
+    display: block;
+    position: relative;
+    background-color: #1EAEDB;
+    width: 120px;
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: black;
+    font-size: 11px;
+}
+
+.ver-url:hover{
+    background-color: rgb(0, 255, 64) ;
+}
 
