@@ -3,7 +3,7 @@ let boton=document.querySelector(".boton-random");
 let sorteocontent=document.querySelector(".sorteo-content");
 let resultado=document.querySelector(".resultado");
 
-let tipo=["webp","jpg","webp","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","webp","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg"];
+let tipo=["","webp","jpg","webp","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","webp","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg"];
 
 //EVENT LISTENER
 eventListener();
