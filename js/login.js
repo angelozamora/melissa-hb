@@ -46,10 +46,10 @@ function validarCampo(){
 
 function validarLongitud(campo){
     if(campo.value.length>0){
-        campo.style.borderBottomColor="green"
+        campo.style.borderBottom="2px solid #58D68D";
     }
     else{
-        campo.style.borderBottomColor="red"
+        campo.style.borderBottomColor="red";
     }
 }
 
