@@ -96,12 +96,12 @@ td{
     border-radius: 5px;
     border: 1px solid #CACFD2 ;
     font-size: 15px;
+    color: black;
 
 }
 
 #vaciar-carrito:hover{
     background-color: rgb(19, 231, 107) ;
-    color: black;
     font-weight: bold;
 }
 /**portada****/
@@ -132,7 +132,7 @@ td{
 .hb-unicorn{
     height: 85%;
     width: 140px;
-    background-color: tomato;
+
     position: absolute;
     right: 160px;
 }
