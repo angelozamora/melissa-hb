@@ -15,11 +15,95 @@
     top: 18px;
 }
 
+.carrito:hover #carrito-compras{
+    display: block;
+}
 
+#carrito-compras{
+    min-height: 80px;
+    width: 350px;
+    background-color: white;
+    position: relative;
+    z-index: 10000;
+    padding: 10px;
+    left: -200px;
+    border: 1px solid #E5E8E8;
+    display: none;
+}
 
+#lista-compras{
+    position: relative;
+    min-height: 40px;
+}
 
+th,td{
+    width: 90px;
+}
 
+.th1{
+    width:200px;
+}
 
+.td1{
+    border: 1px solid #D6DBDF ;
+}
+
+th{
+    border-bottom: 1px solid #EBEDEF;
+}
+
+td{
+    height: 110px;
+    text-align: center;
+}
+
+.ver-url{
+    font-size: 13px;
+    background-color: #1EAEDB;
+    display: block;
+    width: 48px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+
+.ver-url:hover{
+    background-color: #FFEB3B;
+    font-weight: bold;
+}
+
+.borrar-curso{
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    display: block;
+    width: 25px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0px auto;
+    border-radius: 100%;
+}
+
+#vaciar-carrito{
+    position: relative;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #CACFD2 ;
+    font-size: 15px;
+
+}
+
+#vaciar-carrito:hover{
+    background-color: rgb(19, 231, 107) ;
+    color: black;
+    font-weight: bold;
+}
 /**portada****/
 .portada-content{
     width: 100%;
