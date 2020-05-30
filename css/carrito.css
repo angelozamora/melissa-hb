@@ -1,0 +1,105 @@
+
+
+
+/* header */
+
+
+
+
+
+.carrito{
+    height: 35px;
+    width: 40px;
+    position: absolute;
+    right: 220px;
+    top: 18px;
+}
+
+
+
+
+
+
+/**portada****/
+.portada-content{
+    width: 100%;
+    height: 160px;
+    background-color: white ;
+    background-image: url(../img/estrellas.png);
+    background-size: 30%;
+    position: relative;
+    padding: 10px;
+}
+
+.hb-imagen{
+    height: 85%;
+    width: 110px;
+    position: absolute;
+    left: 140px;
+}
+
+.hb-content{
+    height: 85%;
+    width:450px;
+    position: absolute;
+    right: 350px;
+}
+
+.hb-unicorn{
+    height: 85%;
+    width: 140px;
+    background-color: tomato;
+    position: absolute;
+    right: 160px;
+}
+
+.portada-imagen{
+    width: 100%;
+}
+
+#happy{
+    width: 100%;
+}
+
+/***** main carrito ******/
+
+
+.titulo{
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.regalo{
+    width: 29%;
+    margin: 10px 20px;
+}
+
+.mayor{
+    border: 2px solid rgb(243, 55, 42);
+}
+
+.regalo-imagen{
+    height: 230px;
+}
+
+
+
+.boton-compra{
+    position: absolute;
+    width: 91%;
+    height: 35px;
+    bottom: 10px;
+    background-color: #1EAEDB;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.boton-compra:hover{
+    background-color: rgb(19, 231, 107) ;
+    cursor: pointer;
+}
+

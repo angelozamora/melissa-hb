@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica,sans-serif;
+}
+
+li,ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/**** BODY ****/
+
+.body-light{
+    min-width: 800px;
+    min-height: 450px;
+    height: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+.body{
+    
+    min-width: 1300px;
+    min-height: 100%;
+    position: relative;
+    background-color: #fde0e0;
+    margin: 0px auto;
+}
+
+/**** ASIDE ****/
+
+.aside-imagen{
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background-color: #3498DB;
+    background-image: url(../img/unicornio/aside3.png);
+    background-size: 100%;
+    background-position: center top;
+    z-index: 50;
+    top: 0;
+}
+
+/* header */
+.header{
+    min-width: 1300px;
+    height: 70px;
+    background-color: #FBFCFC ;
+    z-index: 10000;
+    position: relative;
+   
+}
+
+.logo-header{
+    height: 60px;
+    width: 350px;
+    position: absolute;
+    left: 120px;
+    top: 5px;
+}
+
+.sorteo{
+    height: 35px;
+    width: 75px;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.header-img{
+    width: 100%; 
+    
+}
+
+
+
+/**** MAIN ****/
+
+.main-light{
+    margin: 7% auto;
+    background-color: white;
+    border: 1px solid  #5D6D7E;
+    box-shadow: black;
+    position: relative;
+
+}
+
+
+.main{
+    position: relative;
+    min-width: 1150;
+    min-height: 580px;
+    background-color: #fde0e0;
+    margin-left: 150px; 
+    padding: 10px 20px;
+}
+
+.main-content{
+    width: 1100px;
+    min-height: 400px;
+    margin: 5px auto;
+    padding: 5px 5px;
+    position: relative;
+}
+
+/**************/
+
+.titulo{
+    position: relative;
+    text-align: center;
+    top: 5px;
+    padding: 4px;
+    color: black;
+}
+
+.titulo1{
+    border-bottom: 1px solid #5D6D7E;
+}
+
+.boton{
+    display: block;
+    margin: 12px auto;
+    text-align: center;
+}
+
+
+.boton a{
+    color: black;
+    display: block;
+    background-color: #039BE5 ;
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    
+}
+
+
+.boton a:hover, .boton a:focus , .boton-ingresar:hover, .boton-ingresar:focus {
+    outline: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 255, 64) ;
+    border: 1px solid #27AE60;
+    cursor: pointer;
+
+}
+
+/**** BOTON RANDOM ****/
+
+.boton-random{
+    position: relative;
+    width: 150px;
+    height: 35px;
+    background-color: #1EAEDB;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.boton-random:hover{
+    background-color: rgb(19, 231, 107) ;
+    cursor: pointer;
+}
+
+/*** CARRITO ***/
+
+.main-carrito, .main-giftcard, .main-sorteo{
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+    padding: 10px 30px;
+    margin: 15px auto;
+
+}
+
+.main-giftcard, .main-sorteo{
+    background-color: white;
+}
+
+
+.carrito-content,.giftcard-content, .sorteo-content{
+    width: 100%;
+    min-height: 30%;
+    background-color: transparent;
+    position: relative;
+    margin: 15px auto; 
+    padding: 10px 0px;
+    
+    
+}
+
+
+.regalo{
+    height: 330px;
+    background-color: white;
+    padding: 13px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #F2F3F4 ;
+
+}
+
+.regalo-imagen{
+    width: 100%;
+    background-color: blueviolet;
+    border: 1px solid #E5E7E9;
+    position: relative;
+}
+
+.regaloImg{
+    width: 100%;    ;
+    height: 100%;
+    position: relative;
+}
+
+.nombre-producto{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/**** GIFT ****/
+.giftcard-exito, .sorteo-exito{
+    background-color: rgb(17, 238, 102) ;
+}
+
+
+#spinner{
+    display: none;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.condicion{
+    font-size: 12px;
+    padding-bottom: 15px;
+}
