@@ -53,6 +53,7 @@ function agregarCarrito(regalo){
 
 }
 
+
 function vaciarCarro(){
     listacompras.innerHTML="";
 }

@@ -28,7 +28,8 @@ a{
     min-width: 1300px;
     min-height: 100%;
     position: relative;
-    background-color: #fde0e0;
+    /*background-color: #fde0e0;*/
+    background-color: blue;
     margin: 0px auto;
 }
 
