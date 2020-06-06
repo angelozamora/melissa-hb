@@ -1,6 +1,6 @@
 //VARIANLES
-let boton=document.querySelector(".boton-random");
-let giftcontent=document.querySelector(".giftcard-content");
+let boton=document.querySelector(".btn-random");
+let giftcard=document.querySelector(".giftcard");
 let resultado=document.querySelector(".resultado");
 
 //EVENT LISTENER
@@ -21,23 +21,23 @@ function valorGiftCard(){
 
     resultado.innerHTML="";
 
-    if(giftcontent.className="giftcard-exito"){
-        giftcontent.classList.remove('giftcard-exito');
+    if(giftcard.className="giftcard-exito"){
+        giftcard.classList.remove('giftcard-exito');
     }
 
     var spinnerGif=document.getElementById('spinner');
     spinnerGif.style.display='block';
 
     let innerHTML=`
-        <h2 class="titulo titulo2">Felicidades Hermosa!!</h2>
-        <h1 class="titulo gift-valor">S/${numRandom}</h1>
-        <h3 class="titulo condicion">ESTE PREMIO SOLO ES VALIDO SI LE DAS MUCHO AMOR Y CARIÑO AL TIO GUAPO DE TATY</h3>
+        <h2 class="titulo2">Felicidades Hermosa!!</h2>
+        <h1 class="gift-valor">S/${numRandom}</h1>
+        <h3 class="titulo2">Este premio solo es valido si le das mucho amor y cariño al tio guapo de Taty</h3>
     
     `;
 
     setTimeout(() => {
         spinnerGif.style.display='none';
-        giftcontent.classList.add('giftcard-exito');
+        giftcard.classList.add('giftcard-exito');
         resultado.innerHTML=innerHTML;
     },4000)
 
