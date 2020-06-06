@@ -1,6 +1,6 @@
 //VARIANLES
-let boton=document.querySelector(".boton-random");
-let sorteocontent=document.querySelector(".sorteo-content");
+let boton=document.querySelector(".btn-random");
+let sorteo=document.querySelector(".sorteo");
 let resultado=document.querySelector(".resultado");
 
 let tipo=["","webp","jpg","webp","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","webp","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg","jpg"];
@@ -73,37 +73,39 @@ function sorteoRegalos(){
 
     resultado.innerHTML="";
 
-    if(sorteocontent.className="sorteo-exito"){
-        sorteocontent.classList.remove('sorteo-exito');
+    if(sorteo.className="sorteo-exito"){
+        sorteo.classList.remove('sorteo-exito');
     }
 
     var spinnerGif=document.getElementById("spinner");
     spinnerGif.style.display="block";
+    spinnerGif.style.height="10rem";
+    spinnerGif.style.margin="0 auto";
 
 
     innerHTML=`
-        <h2 class="titulo titulo2">Felicidades Hermosa!!</h2>
-        <div class="regalo">
-            <div class="regalo-imagen">
-            <img src="img/Regalos/regalo${regalo1}00.${tipo[regalo1]}" alt="" class="regaloImg">
+        <h2 class="titulo2">Felicidades Hermosa!!</h2>
+        <div class="regalo-content">
+            <div class="regalo">
+            <img src="img/Regalos/regalo${regalo1}00.${tipo[regalo1]}" alt="" class="regalo-imagen">
             </div>
             <a href="${url[regalo1]}" class="ver-url" >VER REGALO</a>
         </div>
 
-        <div class="regalo">
-            <div class="regalo-imagen">
-            <img src="img/Regalos/regalo${regalo2}00.${tipo[regalo2]}" alt="" class="regaloImg">
+        <div class="regalo-content">
+            <div class="regalo">
+            <img src="img/Regalos/regalo${regalo2}00.${tipo[regalo2]}" alt="" class="regalo-imagen">
             </div>
             <a href="${url[regalo2]}" class="ver-url" >VER REGALO</a>
         </div>
-        <h3 class="titulo condicion">ESTE PREMIO SOLO ES VALIDO SI LE DAS MUCHO AMOR Y CARIÑO AL TIO GUAPO DE TATY</h3>
+        <h3 class="titulo2">Este premio solo es valido si le das mucho amor y cariño al tio guapo de Taty</h3>
     
     `;
 
 
     setTimeout(()=>{
         spinnerGif.style.display="none";
-        sorteocontent.classList.add('sorteo-exito');
+        sorteo.classList.add('sorteo-exito');
         resultado.innerHTML=innerHTML;
     },4000)
 }
