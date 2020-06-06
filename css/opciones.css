@@ -1,20 +1,27 @@
-
-body{
-    background-image: url(../img/zahu.jpg);
-    background-size: unset;
-    background-attachment: fixed;
-    position: relative;
-    justify-content: center;
-    overflow-y: hidden;
-    
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
 }
 
+li{
+    list-style: none;
+}
 
+a{
+    text-decoration: none;
+}
+
+body{
+    height: auto;
+    min-height: 100%;
+    background-image: url(../img/zahu.jpg);
+}
 
 body::before{
     content: "";
-    min-height: 100vh;
-    min-width: 800px; 
+    height: auto;
+    min-height: 100%;
     width: 100%;  
     position: absolute;
     background-color: #95A5A6;
@@ -25,33 +32,78 @@ body::before{
 }
 
 
-.main-light{
-    height: 140px;
-    width: 540px;
-    padding: 10px;
-    z-index: 500;
-   
-}
 
- 
 
-.main-content-light{
-    position: relative;
-    top: 20px;
-    height: 60PX;
-    display: flex;
+
+.body-content{
+    height: 16.5rem;;
+    width: 75%;
+    background-color: white;
+    border: 1px solid #d2d8d8;
+    margin: 5rem auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     
 }
 
-
-.boton-opcion{
-    height: 30px;
-    width: 160px;
-    line-height: 35px;
-
+.main-content{
+    width: 100;
+    height: 100%;
+    background-color: transparent;
 }
 
-#titulo{
-    font-size: 23px;
+.titulo{
     font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    padding: 0.7rem 0.2rem;
+    border-bottom: 1px solid #bfc5c5;
+    margin-bottom: 1.5rem;
+}
+
+.opciones-content li{
+    background-color: transparent;
+    width: 80%;
+    margin: 1rem auto;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.opciones-content li a{
+    color: black;
+    background-color: #039BE5 ;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    display: block;
+    border-radius: 0.35rem;
+}
+
+.btn-opcion a:hover, .btn-opcion a      :focus{
+    outline: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(49, 235, 74);
+    border: 1px solid rgb(27, 216, 74) ;
+    cursor: pointer;
+}
+
+@media (min-width:480px){
+
+    .body-content{
+        height: 10.2rem;;
+        width: 40%;
+    }
+
+    .titulo{
+        font-size: 1.4rem;
+        padding: 0.6rem 0.2rem;
+    }
+    .opciones-content li{
+        float: left;
+        width: 30%;
+        margin: 0.2rem 1.5%;
+    }
 }
