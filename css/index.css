@@ -1,0 +1,176 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  height: auto;
+  min-height: 100%;
+  background-color: #fde0e0;
+}
+
+.content-body{
+  height: 21.5rem;
+  background-color: transparent;
+  width: 78%;
+  margin: 4.5rem auto;
+  border: 0.4px solid #d2d8d8;
+}
+
+
+  
+
+
+.content-imagen{
+  height: 100%;
+  width: 45%;
+  background-color: transparent;
+  display: none;
+}
+
+.content-login{
+  height: 100%;
+  width: 100%;
+  background-color: royalblue;
+  background-image: url(../img/unicornio/unicornio-luna.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0.7rem;
+}
+
+.content-form{
+  height: 90%;
+  width: 85%;
+  margin: 0.4rem auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #bfc5c5;
+  padding: 0.1rem 0.6rem;
+}
+
+.logo-imagen{
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem auto;
+  background-color: lightcoral;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 0.1px solid #d2d8d8;
+}
+
+.logo-imagen img{
+  position: relative;
+  width: 160%;
+  right: 35%;
+  margin: 0 auto;
+  height: 100%;
+  
+}
+
+.content-imagen img{
+  width: 100%;
+  height: 100%;
+}
+
+#formulario{
+  background-color: transparent;
+  height: 54%;
+  width: 100%;
+  position: relative;
+  padding: 0.2rem 0.3rem;
+}
+
+#formulario label{
+  font-family: sans-serif;
+  font-size: 0.64rem;
+}
+
+#formulario input{
+  outline: none;
+  width: 100%;
+  height: 20%;
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border: 0.1px solid #eaeded;
+  border-bottom: 1px solid #34495e;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+
+#formulario input:focus {
+  outline: none;
+  border: 0.5px solid rgb(7, 175, 241);
+}
+
+#btn-login{
+  border-radius: 5px;
+  display: block;
+  margin: 0.4rem auto;
+  width: 48%;
+  height: 1.7rem;
+  text-align: center;
+  font-size: 0.65rem;
+  
+}
+
+.btn-off{
+  background-color: transparent;
+  border: 1.3px solid #717b85;
+  color: #4b5055;
+  font-weight: bold;
+}
+
+.btn-on {
+  border: 1px solid #1f618d;
+  background-color: #039be5;
+}
+
+.btn-on:hover ,  .btn-on:focus{
+  outline: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(49, 235, 74);
+  border: 1px solid rgb(27, 216, 74) ;
+  cursor: pointer;
+}
+
+@media (min-width:480px){
+
+  .content-body{
+      width: 55%;
+      margin-top: 6.5rem;
+      height: 24.5rem;
+  }
+
+  .content-form{
+      padding: 0.1rem 1rem;
+      height: 95%;
+  }
+
+  .content-login{
+      width: 55%;
+  }
+
+  .content-imagen{
+      display: initial;
+  }
+
+  .content-login,.content-imagen{
+      float: left;
+  }
+
+  .logo-imagen{
+      height: 6.1rem;
+      width: 6.1rem;
+  }
+  #formulario label{
+      font-size: 0.68rem;
+  }
+  #formulario input{
+      font-size: 0.9rem;
+  }
+  #btn-login{
+      margin-top: 0.7rem;
+      font-size: 0.85rem;
+  }
+}

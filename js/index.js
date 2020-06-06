@@ -1,8 +1,8 @@
 //Variables
 var  boton=document.getElementById("btn-login");
-var user=document.getElementById("user");
+var user=document.getElementById("usuario");
 var password=document.getElementById("password");
-var formulario=document.getElementById("form")
+var formulario=document.getElementById("formulario")
 
 //Event Listener
 eventListener();
@@ -23,20 +23,20 @@ function validarCampo(){
     validarLongitud(this);
 
     if(user.value!=="" && password.value!==""){
-        if(boton.classList.contains("boton-des")){
-            boton.classList.remove("boton-des");
-            boton.classList.add("boton-ingresar");
+        if(boton.classList.contains("btn-off")){
+            boton.classList.remove("btn-off");
+            boton.classList.add("btn-on");
         }
         boton.disabled=false;
     }
     else{
-        if(boton.classList.contains("boton-des")){
+        if(boton.classList.contains("btn-off")){
         }
         else{
-            if(boton.classList.contains("boton-ingresar")){
-                boton.classList.remove("boton-ingresar");
+            if(boton.classList.contains("btn-on")){
+                boton.classList.remove("btn-on");
             }
-            boton.classList.add("boton-des");
+            boton.classList.add("btn-off");
         }
         boton.disabled=true;
     }

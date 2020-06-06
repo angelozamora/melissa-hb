@@ -1,46 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/login.css" />
-    </head>
-    <body>
-        <div class="body-light">
-        <main class="main-light">
-            <div class="main-content-light">
-            <div class="login-imagen"></div>
-            <div class="login-content">
-                <div class="login-formulario">
-                <div class="login-logo"></div>
-                <div class="formulario-content">
-                    <form id="form" action="#">
-                    <label for="user">USUARIO</label><br />
-                    <input
-                        type="text"
-                        id="user"
-                        placeholder="Ingrese su usuario"
-                    /><br />
-                    <label for="password">PASSWORD</label><br />
-                    <input
-                        type="text"
-                        id="password"
-                        placeholder="Ingrese su password"
-                    /><br />
-                    <button id="btn-login" class="boton boton-des" type="submit">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="content-body">
+        <div class="content-imagen">
+            <img src="img/melissa/loginportada.jpg" alt="">
+        </div>
+        <div class="content-login">
+            <div class="content-form">
+                <div class="logo-imagen">
+                    <img src="img/melissa/loginlogo.jpg" alt="">
+                </div>
+                
+                <form action="" id="formulario">
+                    <label for="usuario">USUARIO</label><br>
+                    <input type="text" id="usuario" placeholder="Ingrese su usuario"><br>
+                    <label for="password">PASSWORD</label><br>
+                    <input type="text" id="password" placeholder="Ingrese su password"><br>
+                    <button id="btn-login" class="btn-off" type="submit" disabled>
                         Ingresar
                     </button>
-                    </form>
+                </form>
+                
+            </div>
 
-                    <!--<li class="boton boton-ingresar" ><a href="opciones.html">Ingresar</a></li>-->
-                </div>
-                </div>
-            </div>
-            </div>
-        </main>
         </div>
 
-        <script src="js/login.js"></script>
-    </body>
+    </div>
+    <script src="js/index.js"></script>
+</body>
 </html>
