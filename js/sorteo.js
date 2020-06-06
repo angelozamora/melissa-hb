@@ -79,8 +79,6 @@ function sorteoRegalos(){
 
     var spinnerGif=document.getElementById("spinner");
     spinnerGif.style.display="block";
-    spinnerGif.style.height="10rem";
-    spinnerGif.style.margin="0 auto";
 
 
     innerHTML=`

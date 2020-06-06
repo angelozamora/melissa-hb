@@ -176,8 +176,12 @@ header{
     background-color: rgb(17, 238, 102) ;
 }
 
-.sorteo #spinner{
-    display: none;
+#spinner{
+    display: none;  
+    height: 5rem;
+    background-color: transparent;
+    margin: 0.8rem auto;
+    border: none;
     
 }
 
@@ -297,6 +301,11 @@ header{
         margin: 1rem 9%;
         padding: 0.6;
     }
+
+    #spinner{
+        height: 12rem;
+    }
+
 
     .regalo{
         height: 82%;
