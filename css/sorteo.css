@@ -16,8 +16,6 @@ body{
 
 .body-content{
     min-height: 100%;
-    background-color: lightskyblue;
-    
 }
 
 
@@ -79,7 +77,7 @@ header{
 .main{
     min-height: 100%;
     width: 100%;
-    background-color: #fde0e0;
+    background-color: transparent;
     padding: 0.5rem;
 }
 
@@ -130,7 +128,7 @@ header{
 }
 
 
-/******* SORTEO ********/
+
 
 .sorteo-content{
     min-height: 9rem;
@@ -223,6 +221,11 @@ header{
 
 
 @media (min-width:480px){
+    .body-content{
+        min-height: 100vh;
+        position: relative;
+    }
+
     header{
         position: relative;
         z-index: 100;
@@ -305,7 +308,6 @@ header{
     #spinner{
         height: 12rem;
     }
-
 
     .regalo{
         height: 82%;

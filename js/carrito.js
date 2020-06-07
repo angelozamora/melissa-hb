@@ -17,7 +17,7 @@ function eventListener(){
 //FUNCTION
 function agregarCompra(e){
     e.preventDefault();
-    if(e.target.classList.contains("boton-compra")){
+    if(e.target.classList.contains("btn-comprar")){
         var infoCompra=e.target.parentElement;
         console.log(infoCompra.querySelector("img"));
     }
@@ -40,7 +40,7 @@ function agregarCarrito(regalo){
 
     row.innerHTML=`
         <td class="td1">
-            <img src="${regalo.imagen}" alt="" class="regaloImg">
+            <img src="${regalo.imagen}" alt="" class="regalo-imagen">
         </td>
         <td><a class="ver-url" href="${regalo.direccion}">VER</a></td>
         <td>
@@ -63,8 +63,5 @@ function borarCompra(e){
     if(e.target.classList.contains("borrar-curso")){
         var cursoBorar=e.target.parentElement.parentElement;
         cursoBorar.remove();
-    }
-    else{
-        console.log("no");
     }
 }

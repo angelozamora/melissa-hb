@@ -1,18 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
 
+a{
+    text-decoration: none;
+}
 
+body{
+    height: auto;
+    min-height: 100%;
+    background-color: #fde0e0;
+}
 
-/* header */
+.body-content{
+    min-height: 100%;
+    
+}
+/******** HEADER ********/
 
+header{
+    position: relative;
+    height: 2.5rem;
+    width: 100%;
+    background-color: white;
+    
 
+}
 
+.header-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding: 2%;  
+}
 
+.logo-header{
+    position: relative;
+    height: 80%;
+    width: 38%;
+    background-color: transparent;
 
+}
+
+/*******HEADER CARRITO ****/
 .carrito{
-    height: 35px;
-    width: 40px;
     position: absolute;
-    right: 220px;
-    top: 18px;
+    width: 5%;
+    height: 55%;
+    right: 20%;
+    top: 25%;
+    background-color: transparent;
 }
 
 .carrito:hover #carrito-compras{
@@ -20,32 +60,36 @@
 }
 
 #carrito-compras{
-    min-height: 80px;
-    width: 350px;
+    min-height: 6rem;
+    width: 13rem;
     background-color: white;
     position: relative;
     z-index: 10000;
-    padding: 10px;
-    left: -200px;
+    padding: 0.5rem;
+    left: -8rem;
     border: 1px solid #E5E8E8;
     display: none;
 }
 
+
+
 #lista-compras{
     position: relative;
-    min-height: 40px;
+    min-height: 6rem;
+    background-color: transparent;
 }
 
 th,td{
-    width: 90px;
+    width: 6rem;
 }
 
 .th1{
-    width:200px;
+    width:80rem;
 }
 
 .td1{
     border: 1px solid #D6DBDF ;
+
 }
 
 th{
@@ -53,9 +97,13 @@ th{
 }
 
 td{
-    height: 110px;
+    height: 5.4rem;
     text-align: center;
+    background-color: transparent;
 }
+
+
+/***** CONTENT TABLA********/
 
 .ver-url{
     font-size: 13px;
@@ -85,17 +133,20 @@ td{
     border-radius: 100%;
 }
 
+
+
+/****** HEADER CARRITO BTN-VACIARCARRITO*******/
 #vaciar-carrito{
     position: relative;
-    margin-top: 20px;
+    margin-top: 0.5rem;
     display: block;
     width: 100%;
     text-align: center;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 5px;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border-radius: 0.4rem;
     border: 1px solid #CACFD2 ;
-    font-size: 15px;
+    font-size: 0.85rem;
     color: black;
 
 }
@@ -104,16 +155,64 @@ td{
     background-color: rgb(19, 231, 107) ;
     font-weight: bold;
 }
-/**portada****/
-.portada-content{
+
+
+
+
+/***********/
+
+.opciones{
+    position: absolute;
+    width: 10%;
+    height: 55%;
+    background-color: transparent;
+    border: 0.4px solid #d2d8d8;
+    border-radius: 0.5rem;
+    right: 5%;
+    top: 20%;
+}
+
+.header-img{
     width: 100%;
-    height: 160px;
-    background-color: white ;
+    height: auto;
+}
+
+
+
+
+
+/******** ASIDE ***********/
+.aside-content{
+    position: relative;
+    height: 3.5rem;
+    width: 100%;
+    background-color: #3498DB;
+    background-image: url(../img/unicornio/aside3.png);
+    background-size: 30%;
+    background-position: center top;
+}
+
+/********** MAIN ************/
+.main{
+    min-height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding: 0.9rem 0.5rem;
+}
+
+/********* MAIN PORTADA**********/
+.portada-content{
+    position: relative;
+    width: 100%;
+    height: 9.5rem;
+    background-color: white;
     background-image: url(../img/estrellas.png);
     background-size: 30%;
-    position: relative;
-    padding: 10px;
+    margin-bottom: 1rem;
+    padding: 1px;
+    display: none;
 }
+
 
 .hb-imagen{
     height: 85%;
@@ -141,49 +240,178 @@ td{
     width: 100%;
 }
 
-#happy{
+
+/********* MAIN IMPORTANT************/
+
+.main-content{
     width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 0.5rem;
 }
-
-/***** main carrito ******/
-
 
 .titulo{
-    font-size: 45px;
-    font-weight: normal;
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    padding: 0.4rem 0.2rem;
+    border-bottom: 1px solid #5D6D7E;
 }
 
-.regalo{
-    width: 29%;
-    margin: 10px 20px;
+.carrito-content{
+    min-height: 9rem;
+    background-color: transparent;
+    padding: 0.2rem;
+}
+
+.regalo-content{
+    height: 20rem;
+    width: 70%;
+    margin: 0.8rem auto;
+    background-color: white;
+    padding: 0.5rem 3%;
+    position: relative;
 }
 
 .mayor{
-    border: 2px solid rgb(243, 55, 42);
+    border: 1px solid red;
+}
+.regalo{
+    height: 75%;
+    width: 100%;
+    background-color: transparent;
 }
 
 .regalo-imagen{
-    height: 230px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E5E7E9;
 }
 
+.nombre-regalo{
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    font-size: 0.8rem;
+    margin: 0.6rem auto;
+}
 
-
-.boton-compra{
-    position: absolute;
-    width: 91%;
-    height: 35px;
-    bottom: 10px;
+.btn-comprar{
     background-color: #1EAEDB;
-    color: white;
-    line-height: 35px;
+    font-family: Helvetica,sans-serif;
+    position: absolute;
+    width: 92%;
+    bottom: 0.8rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.1rem;
+    font-size: 0.8rem;
     text-align: center;
-    border-radius: 5px;
-    font-size: 13px;
-    cursor: pointer;
+    color: black;
 }
 
-.boton-compra:hover{
+
+.btn-comprar:hover, .btn-comprar:focus{
     background-color: rgb(19, 231, 107) ;
     cursor: pointer;
+    color: white;
 }
 
+@media (min-width:480px){
+    .body-content{
+        min-height: 100vh;
+        position: relative;
+    }
+
+    header{
+        position: relative;
+        z-index: 100;
+        height: 4rem;
+        
+    }
+
+    .header-content{
+        padding: 0.4%  1.6%; 
+    }
+
+    .logo-header{
+        width: 22%;
+        height: 85%;
+    }
+
+    .carrito{
+        position: absolute;
+        right: 15%;
+        width: 3.2%;
+        top: 20%;
+    }
+
+    #carrito-compras{
+        min-height: 6rem;
+        width: 17rem;
+        left: -10rem;
+    }
+
+    td{
+        height: 7rem;
+    }
+
+
+    .opciones{
+        width: 5.5%;
+        top: 15%;
+    }
+
+    .aside-content{
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        background-size: 100%;
+        z-index: 50;
+        top: 0;
+    }
+
+    .main{
+        width: 90%;
+        margin-left: 10%;
+        padding: 1.2rem 3.5rem;
+        
+    }
+
+    .main-content{
+        padding: 0.8rem 1.2rem;
+    }
+
+    .portada-content{
+        display: block;
+    }
+
+    .carrito-content{
+        padding: 0.2rem 1.5rem;
+        min-height: 12rem;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+        padding: 0.7rem 0.2rem;
+        font-family: Helvetica,sans-serif;
+    }
+
+    .nombre-regalo{   
+        font-size: 0.9rem;
+        margin: 0.8rem auto;
+        
+    }
+
+    .regalo-content{
+        width: 29%;
+        height: 21rem;
+        display: inline-block;
+        margin: 1rem 2%;
+        padding: 0.5rem 1.2%;
+    }
+
+
+}
